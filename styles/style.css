@@ -1,0 +1,56 @@
+/* ? ---------------------------------------------------------- */
+/* ? SITE GAIA PROGRAMAÇÃO E DESIGN */
+/* ? ---------------------------------------------------------- */
+
+/* ? ------------------ SETANDO MARGENS E VARIÁVEIS FIXAS ------------------ */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul-primario: #1c5669;
+    --azul-secundario: #74b2be;
+    --laranja-primario: #ff7c02;
+    --fonte-primaria: "League Spartan", sans-serif;
+}
+
+
+/* ? ---------------------------------------------------------------------- */
+
+/* ! ------------------ VERSÃO MOBILE ATÉ 430PX ------------------ */
+/* ! ------------------------------------------------------------ */
+
+@media screen and (max-width: 490px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_container {
+        display: flex;
+        width: 100vw;
+        padding-top: 1rem;
+        align-items: center;
+        
+    }
+    .header_logo {
+        width: 50vw;
+    }
+    .header_title {
+        font-family: var(--fonte-primaria);
+        color: var(--azul-primario);
+        text-align: right;
+        line-height: 1.1;
+
+    }
+    .header_title span{
+        color: var(--laranja-primario);
+        
+        
+    }
+
+
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes utilizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Ícone na Aba do Navegado -->
+    <link rel="icon" href="./imgs/icongaia.png" />
+    <!-- Folhas de estilos -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- SCRIPTS -->
+    <script defer src="./scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+
+    <title>Gaia Web</title>
+</head>
+
+<body>
+    <!--  ! HEADER #########################################################-->
+    <header class="header">
+        <div class="header_container">
+            <img class="header_logo" src="./imgs/logofull.png" alt="Logo da Empresa Gaia Web. "/>
+            <h2 class="header_title">Sua parceira completa em <span>soluções digitais</span></h2>
+        </div>
+        <div class="header_banner">
+            <img class="header_logo" src="./imgs/mockups.png" alt="Imagem com a tela de 3 telefones com os sites de cliente. "/>
+            <div>
+                <h3>Criamos sites, conteúdo para redes sociais, 
+                    catálogos digitais, fotos profissionais, 
+                    identidade visual e aplicativos.</h3>
+                <button type="button" class="btn btn-whatsapp">
+                    <i class="fa fa-whatsapp"></i> Fale Conosco no WhatsApp
+                </button>
+                    
+            </div>
+        </div>
+    </header>
+    <!--  ! HEADER #########################################################-->
+
+
+    <script>
+        var message = "Olá! Gostaria de saber mais sobre seus produtos e serviços.";
+
+        var whatsappURL = "https://api.whatsapp.com/send?phone=5511999999999&text=" + encodeURIComponent(message);
+
+        $(".btn-whatsapp").attr("href", whatsappURL);
+    </script>
+</body>
+
+</html>
